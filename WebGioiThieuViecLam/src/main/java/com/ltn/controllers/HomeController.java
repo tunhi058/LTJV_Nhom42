@@ -36,6 +36,12 @@ public class HomeController {
             model.addAttribute("name", "Nhi");
         
         model.addAttribute("user", new User());
+        
+        List<User> users = new ArrayList<>();
+        users.add(new User("Nhi", "Lien"));
+        users.add(new User("Cuong", "Nguyen"));
+        
+        model.addAttribute("users", users);
                 
         return "index";
     }

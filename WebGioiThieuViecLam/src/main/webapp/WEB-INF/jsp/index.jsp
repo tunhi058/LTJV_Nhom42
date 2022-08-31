@@ -16,7 +16,23 @@
     <body>
         <h1>Welcome to website!!</h1>
         <h1>Hello ${name}</h1>
-        
+        <c:if test="${  fullName != null}">
+            <h1>${fullName}</h1>
+        </c:if>
+
+        <ul>
+            <c:forEach var="i" begin="1" end="10">
+                <li>${i}</li>
+                </c:forEach>
+        </ul>
+
+        <ol>
+            <c:forEach var="u" items="${users}">
+                <li>${u.firstName} ${u.lastName}</li>
+
+            </c:forEach>
+        </ol>
+
         <h1>${fullName}</h1>
         <form:form method="post" action="/hello-post" modelAttribute="user">
             <form:input path="firstName" />
