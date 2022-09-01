@@ -27,21 +27,7 @@ public class HomeController {
     @RequestMapping("/")
     public String index(Model model,
             @RequestParam Map<String, String> params) {
-        String firstName = params.get("first_name");
-        String lastName = params.get("last_name");
-
-        if (firstName != null && lastName != null) 
-            model.addAttribute("name", String.format("%s %s", firstName, lastName));
-        else 
-            model.addAttribute("name", "Nhi");
         
-        model.addAttribute("user", new User());
-        
-        List<User> users = new ArrayList<>();
-        users.add(new User("Nhi", "Lien"));
-        users.add(new User("Cuong", "Nguyen"));
-        
-        model.addAttribute("users", users);
                 
         return "index";
     }
