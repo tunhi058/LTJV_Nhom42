@@ -15,6 +15,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import static org.hibernate.cfg.Environment.*;
+import org.springframework.orm.hibernate5.HibernateTransactionManager;
 
 /**
  *
@@ -55,4 +56,12 @@ public class HibernateConfig {
         return props;
     }
     
+    @Bean
+    public HibernateTransactionManager transactionManager() {
+        HibernateTransactionManager h = new HibernateTransactionManager();
+        
+        h.setSessionFactory(getSessionFactory().getObject());
+        
+        return h;
+    }
 }
