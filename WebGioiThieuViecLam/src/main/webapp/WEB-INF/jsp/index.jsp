@@ -1,726 +1,840 @@
 <%-- 
-    Document   : index
-    Created on : 19 Aug 2022, 19:21:36
+    Document   : home
+    Created on : 1 Sep 2022, 20:53:24
     Author     : tusnhi
 --%>
 
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Job board HTML-5 Template </title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon"  "<c:url value="/img/favicon.ico"/> ">
+<!doctype html>
+<html class="no-js" lang="zxx">
 
-    <!-- CSS here -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Job Board</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link  href="<c:url value="/resources/css/animate.css"/>" rel="stylesheet">
-    <link  href="<c:url value="/resources/css/animate.min.css"/>" rel="stylesheet">
-    <link  href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet">
-    <link rel="stylesheet" href="<c:url value="/resources/css/owl.carousel.css"/>">
-    <link rel="stylesheet" href="<c:url value="/resources/css/owl.carousel.min.css"/>">
-    <link rel="stylesheet" href="<c:url value="/resources/css/owl.theme.default.css"/>">
+        <!-- <link rel="manifest" href="site.webmanifest"> -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="<c:url value="/resources/css/theme.default.min.css"/>">
-    <link rel="stylesheet" href="<c:url value="/resources/css/theme.green.css"/>">
-    <link rel="stylesheet" href="<c:url value="/resources/css/theme.green.min.css"/>">
-    <link rel="stylesheet" href="<c:url value="/resources/css/style.css"/>" >
-     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+        <!-- CSS here -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/themify-icons.css">
+        <link rel="stylesheet" href="css/nice-select.css">
+        <link rel="stylesheet" href="css/flaticon.css">
+        <link rel="stylesheet" href="css/gijgo.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/slicknav.css">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" >
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    </head>
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <body>
 
-    <!-- Libraries Stylesheet -->
-    <link href="/resources/css/animate.min.css" rel="stylesheet">
-    <link href="/resources/css/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="/resources/css/animate.css" rel="stylesheet">
-    <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
+        <!-- header-start -->
+        <header>
+            <div class="header-area ">
+                <div id="sticky-header" class="main-header-area">
+                    <div class="container-fluid ">
+                        <div class="header_bottom_border">
+                            <div class="row align-items-center">
+                                <div class="col-xl-3 col-lg-2">
+                                    <div class="logo">
+                                        <a href="index.html">
+                                            <img src="img/logo.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-7">
+                                    <div class="main-menu  d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="index.html">home</a></li>
+                                                <li><a href="jobs.html">Browse Job</a></li>
+                                                <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="candidate.html">Candidates </a></li>
+                                                        <li><a href="job_details.html">job details </a></li>
+                                                        <li><a href="elements.html">elements</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">blog <i class="ti-angle-down"></i></a>
+<!--                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">blog</a></li>
+                                                        <li><a href="single-blog.html">single-blog</a></li>
+                                                    </ul>-->
+                                                </li>
+                                                <li><a href="contact.html">Contact</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                    <div class="Appointment">
+                                        <div class="phone_num d-none d-xl-block">
+                                            <a href="#">Log in</a>
+                                        </div>
+                                        <div class="d-none d-lg-block">
+                                            <a class="boxed-btn3" href="#">Post a Job</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mobile_menu d-block d-lg-none"></div>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-end -->
 
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="/resources/css/style.css" rel="stylesheet">
-</head>
-
-<!-- Preloader Start -->
-<div id="preloader-active">
-    <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="preloader-inner position-relative">
-            <div class="preloader-circle"></div>
-            <div class="preloader-img pere-text">
-                <img src="<c:url value="/resources/img/about-1.jpg"/>" alt="">
+        <!-- slider_area_start -->
+        <div class="slider_area">
+            <div class="single_slider  d-flex align-items-center slider_bg_1">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="slider_text">
+                                <h5 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">4536+ Jobs listed</h5>
+                                <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Find your Dream Job</h3>
+                                <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">We provide online instant cash loans with quick approval that suit your term length</p>
+                                <div class="sldier_btn wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                                    <a href="#" class="boxed-btn3">Upload your Resume</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ilstration_img wow fadeInRight d-none d-lg-block text-right" data-wow-duration="1s" data-wow-delay=".2s">
+                <img src="img/banner/illustration.png" alt="">
             </div>
         </div>
-    </div>
-</div>
-<!-- Preloader Start -->
-<header>
-    <!-- Header Start -->
-    <div class="header-area header-transparrent">
-        <div class="headder-top header-sticky">
+        <!-- slider_area_end -->
+
+        <!-- catagory_area -->
+        <div class="catagory_area">
+            <div class="container">
+                <div class="row cat_search">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="single_input">
+                            <input type="text" placeholder="Search keyword">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="single_input">
+                            <select class="wide" >
+                                <option data-display="Location">Location</option>
+                                <option value="1">Dhaka</option>
+                                <option value="2">Rangpur</option>
+                                <option value="4">Sylet</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="single_input">
+                            <select class="wide">
+                                <option data-display="Category">Category</option>
+                                <option value="1">Category 1</option>
+                                <option value="2">Category 2</option>
+                                <option value="4">Category 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="job_btn">
+                            <a href="#" class="boxed-btn3">Find Job</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="popular_search d-flex align-items-center">
+                            <span>Popular Search:</span>
+                            <ul>
+                                <li><a href="#">Design & Creative</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Administration</a></li>
+                                <li><a href="#">Teaching & Education</a></li>
+                                <li><a href="#">Engineering</a></li>
+                                <li><a href="#">Software & Web</a></li>
+                                <li><a href="#">Telemarketing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ catagory_area -->
+
+        <!-- popular_catagory_area_start  -->
+        <div class="popular_catagory_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section_title mb-40">
+                            <h3>Popolar Categories</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-xl-3 col-md-6">
+                        <div class="single_catagory">
+                            <a href="jobs.html"><h4>Design & Creative</h4></a>
+                            <p> <span>50</span> Available position</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-md-6">
+                        <div class="single_catagory">
+                            <a href="jobs.html"><h4>Marketing</h4></a>
+                            <p> <span>50</span> Available position</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-md-6">
+                        <div class="single_catagory">
+                            <a href="jobs.html"><h4>Telemarketing</h4></a>
+                            <p> <span>50</span> Available position</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-md-6">
+                        <div class="single_catagory">
+                            <a href="jobs.html"><h4>Software & Web</h4></a>
+                            <p> <span>50</span> Available position</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-md-6">
+                        <div class="single_catagory">
+                            <a href="jobs.html"><h4>Administration</h4></a>
+                            <p> <span>50</span> Available position</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-md-6">
+                        <div class="single_catagory">
+                            <a href="jobs.html"><h4>Teaching & Education</h4></a>
+                            <p> <span>50</span> Available position</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-md-6">
+                        <div class="single_catagory">
+                            <a href="jobs.html"><h4>Engineering</h4></a>
+                            <p> <span>50</span> Available position</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-md-6">
+                        <div class="single_catagory">
+                            <a href="jobs.html"><h4>Garments / Textile</h4></a>
+                            <p> <span>50</span> Available position</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- popular_catagory_area_end  -->
+
+        <!-- job_listing_area_start  -->
+        <div class="job_listing_area">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-3 col-md-2">
-                        <!-- Logo -->
-                        <div class="logo">
-                            <a href="index.html"><img src="<c:url value="/resources/img/about-1.jpg"/>" alt=""></a>
-                        </div>  
-                    </div>
-                    <div class="col-lg-9 col-md-9">
-                        <div class="menu-wrapper">
-                            <!-- Main-menu -->
-                            <div class="main-menu">
-                                <nav class="d-none d-lg-block">
-                                    <ul id="navigation">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="job_listing.html">Find a Jobs </a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="#">Page</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="single-blog.html">Blog Details</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                                <li><a href="job_details.html">job Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>          
-                            <!-- Header-btn -->
-                            <div class="header-btn d-none f-right d-lg-block">
-                                <a href="#" class="btn head-btn1">Register</a>
-                                <a href="#" class="btn head-btn2">Login</a>
-                            </div>
+                    <div class="col-lg-6">
+                        <div class="section_title">
+                            <h3>Job Listing</h3>
                         </div>
                     </div>
-                    <!-- Mobile Menu -->
-                    <div class="col-12">
-                        <div class="mobile_menu d-block d-lg-none"></div>
+                    <div class="col-lg-6">
+                        <div class="brouse_job text-right">
+                            <a href="jobs.html" class="boxed-btn4">Browse More Job</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="job_lists">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="single_jobs white-bg d-flex justify-content-between">
+                                <div class="jobs_left d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="img/svg_icon/1.svg" alt="">
+                                    </div>
+                                    <div class="jobs_conetent">
+                                        <a href="job_details.html"><h4>Software Engineer</h4></a>
+                                        <div class="links_locat d-flex align-items-center">
+                                            <div class="location">
+                                                <p> <i class="fa fa-map-marker"></i> California, USA</p>
+                                            </div>
+                                            <div class="location">
+                                                <p> <i class="fa fa-clock-o"></i> Part-time</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jobs_right">
+                                    <div class="apply_now">
+<!--                                        <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>-->
+                                        <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    </div>
+                                    <div class="date">
+                                        <p>Date line: 31 Jan 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <div class="single_jobs white-bg d-flex justify-content-between">
+                                <div class="jobs_left d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="img/svg_icon/2.svg" alt="">
+                                    </div>
+                                    <div class="jobs_conetent">
+                                        <a href="job_details.html"><h4>Digital Marketer</h4></a>
+                                        <div class="links_locat d-flex align-items-center">
+                                            <div class="location">
+                                                <p> <i class="fa fa-map-marker"></i> California, USA</p>
+                                            </div>
+                                            <div class="location">
+                                                <p> <i class="fa fa-clock-o"></i> Part-time</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jobs_right">
+                                    <div class="apply_now">
+                                        <!--<a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>-->
+                                        <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    </div>
+                                    <div class="date">
+                                        <p>Date line: 31 Jan 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <div class="single_jobs white-bg d-flex justify-content-between">
+                                <div class="jobs_left d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="img/svg_icon/3.svg" alt="">
+                                    </div>
+                                    <div class="jobs_conetent">
+                                        <a href="job_details.html"><h4>Wordpress Developer</h4></a>
+                                        <div class="links_locat d-flex align-items-center">
+                                            <div class="location">
+                                                <p> <i class="fa fa-map-marker"></i> California, USA</p>
+                                            </div>
+                                            <div class="location">
+                                                <p> <i class="fa fa-clock-o"></i> Part-time</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jobs_right">
+                                    <div class="apply_now">
+                                        <!--<a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>-->
+                                        <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    </div>
+                                    <div class="date">
+                                        <p>Date line: 31 Jan 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <div class="single_jobs white-bg d-flex justify-content-between">
+                                <div class="jobs_left d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="img/svg_icon/4.svg" alt="">
+                                    </div>
+                                    <div class="jobs_conetent">
+                                        <a href="job_details.html"><h4>Visual Designer</h4></a>
+                                        <div class="links_locat d-flex align-items-center">
+                                            <div class="location">
+                                                <p> <i class="fa fa-map-marker"></i> California, USA</p>
+                                            </div>
+                                            <div class="location">
+                                                <p> <i class="fa fa-clock-o"></i> Part-time</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jobs_right">
+                                    <div class="apply_now">
+                                        <!--<a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>-->
+                                        <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    </div>
+                                    <div class="date">
+                                        <p>Date line: 31 Jan 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <div class="single_jobs white-bg d-flex justify-content-between">
+                                <div class="jobs_left d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="img/svg_icon/5.svg" alt="">
+                                    </div>
+                                    <div class="jobs_conetent">
+                                        <a href="job_details.html"><h4>Software Engineer</h4></a>
+                                        <div class="links_locat d-flex align-items-center">
+                                            <div class="location">
+                                                <p> <i class="fa fa-map-marker"></i> California, USA</p>
+                                            </div>
+                                            <div class="location">
+                                                <p> <i class="fa fa-clock-o"></i> Part-time</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jobs_right">
+                                    <div class="apply_now">
+                                        <!--<a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>-->
+                                        <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    </div>
+                                    <div class="date">
+                                        <p>Date line: 31 Jan 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <div class="single_jobs white-bg d-flex justify-content-between">
+                                <div class="jobs_left d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="img/svg_icon/1.svg" alt="">
+                                    </div>
+                                    <div class="jobs_conetent">
+                                        <a href="job_details.html"><h4>Creative Designer</h4></a>
+                                        <div class="links_locat d-flex align-items-center">
+                                            <div class="location">
+                                                <p> <i class="fa fa-map-marker"></i> California, USA</p>
+                                            </div>
+                                            <div class="location">
+                                                <p> <i class="fa fa-clock-o"></i> Part-time</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jobs_right">
+                                    <div class="apply_now">
+                                        <!--<a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>-->
+                                        <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    </div>
+                                    <div class="date">
+                                        <p>Date line: 31 Jan 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Header End -->
-</header>
-<main>
+        <!-- job_listing_area_end  -->
 
-    <!-- slider Area Start-->
-    <div class="slider-area ">
-        <!-- Mobile Menu -->
-        <div class="slider-active">
-            <div class="single-slider slider-height d-flex align-items-center" data-background="<c:url value="/resources/img/about-1.jpg"/>">
+<!--         featured_candidates_area_start  
+        <div class="featured_candidates_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section_title text-center mb-40">
+                            <h3>Featured Candidates</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="candidate_active owl-carousel">
+                            <div class="single_candidates text-center">
+                                <div class="thumb">
+                                    <img src="img/candiateds/1.png" alt="">
+                                </div>
+                                <a href="#"><h4>Markary Jondon</h4></a>
+                                <p>Software Engineer</p>
+                            </div>
+                            <div class="single_candidates text-center">
+                                <div class="thumb">
+                                    <img src="img/candiateds/2.png" alt="">
+                                </div>
+                                <a href="#"><h4>Markary Jondon</h4></a>
+                                <p>Software Engineer</p>
+                            </div>
+                            <div class="single_candidates text-center">
+                                <div class="thumb">
+                                    <img src="img/candiateds/3.png" alt="">
+                                </div>
+                                <a href="#"><h4>Markary Jondon</h4></a>
+                                <p>Software Engineer</p>
+                            </div>
+                            <div class="single_candidates text-center">
+                                <div class="thumb">
+                                    <img src="img/candiateds/4.png" alt="">
+                                </div>
+                                <a href="#"><h4>Markary Jondon</h4></a>
+                                <p>Software Engineer</p>
+                            </div>
+                            <div class="single_candidates text-center">
+                                <div class="thumb">
+                                    <img src="img/candiateds/5.png" alt="">
+                                </div>
+                                <a href="#"><h4>Markary Jondon</h4></a>
+                                <p>Software Engineer</p>
+                            </div>
+                            <div class="single_candidates text-center">
+                                <div class="thumb">
+                                    <img src="img/candiateds/6.png" alt="">
+                                </div>
+                                <a href="#"><h4>Markary Jondon</h4></a>
+                                <p>Software Engineer</p>
+                            </div>
+                            <div class="single_candidates text-center">
+                                <div class="thumb">
+                                    <img src="img/candiateds/7.png" alt="">
+                                </div>
+                                <a href="#"><h4>Markary Jondon</h4></a>
+                                <p>Software Engineer</p>
+                            </div>
+                            <div class="single_candidates text-center">
+                                <div class="thumb">
+                                    <img src="img/candiateds/8.png" alt="">
+                                </div>
+                                <a href="#"><h4>Markary Jondon</h4></a>
+                                <p>Software Engineer</p>
+                            </div>
+                            <div class="single_candidates text-center">
+                                <div class="thumb">
+                                    <img src="img/candiateds/9.png" alt="">
+                                </div>
+                                <a href="#"><h4>Markary Jondon</h4></a>
+                                <p>Software Engineer</p>
+                            </div>
+                            <div class="single_candidates text-center">
+                                <div class="thumb">
+                                    <img src="img/candiateds/9.png" alt="">
+                                </div>
+                                <a href="#"><h4>Markary Jondon</h4></a>
+                                <p>Software Engineer</p>
+                            </div>
+                            <div class="single_candidates text-center">
+                                <div class="thumb">
+                                    <img src="img/candiateds/10.png" alt="">
+                                </div>
+                                <a href="#"><h4>Markary Jondon</h4></a>
+                                <p>Software Engineer</p>
+                            </div>
+                            <div class="single_candidates text-center">
+                                <div class="thumb">
+                                    <img src="img/candiateds/3.png" alt="">
+                                </div>
+                                <a href="#"><h4>Markary Jondon</h4></a>
+                                <p>Software Engineer</p>
+                            </div>
+                            <div class="single_candidates text-center">
+                                <div class="thumb">
+                                    <img src="img/candiateds/4.png" alt="">
+                                </div>
+                                <a href="#"><h4>Markary Jondon</h4></a>
+                                <p>Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         featured_candidates_area_end  -->
+
+        <div class="top_companies_area">
+            <div class="container">
+                <div class="row align-items-center mb-40">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="section_title">
+                            <h3>Top Companies</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="brouse_job text-right">
+                            <a href="jobs.html" class="boxed-btn4">Browse More Job</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-xl-3 col-md-6">
+                        <div class="single_company">
+                            <div class="thumb">
+                                <img src="img/svg_icon/5.svg" alt="">
+                            </div>
+                            <a href="jobs.html"><h3>Snack Studio</h3></a>
+                            <p> <span>50</span> Available position</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-md-6">
+                        <div class="single_company">
+                            <div class="thumb">
+                                <img src="img/svg_icon/4.svg" alt="">
+                            </div>
+                            <a href="jobs.html"><h3>Snack Studio</h3></a>
+                            <p> <span>50</span> Available position</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-md-6">
+                        <div class="single_company">
+                            <div class="thumb">
+                                <img src="img/svg_icon/3.svg" alt="">
+                            </div>
+                            <a href="jobs.html"><h3>Snack Studio</h3></a>
+                            <p> <span>50</span> Available position</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-md-6">
+                        <div class="single_company">
+                            <div class="thumb">
+                                <img src="img/svg_icon/1.svg" alt="">
+                            </div>
+                            <a href="jobs.html"><h3>Snack Studio</h3></a>
+                            <p> <span>50</span> Available position</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--         job_searcing_wrap  
+        <div class="job_searcing_wrap overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 offset-lg-1 col-md-6">
+                        <div class="searching_text">
+                            <h3>Looking for a Job?</h3>
+                            <p>We provide online instant cash loans with quick approval </p>
+                            <a href="#" class="boxed-btn3">Browse Job</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 col-md-6">
+                        <div class="searching_text">
+                            <h3>Looking for a Expert?</h3>
+                            <p>We provide online instant cash loans with quick approval </p>
+                            <a href="#" class="boxed-btn3">Post a Job</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!-- job_searcing_wrap end  -->
+
+<!--         testimonial_area  
+        <div class="testimonial_area  ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section_title text-center mb-40">
+                            <h3>Testimonial</h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="testmonial_active owl-carousel">
+                            <div class="single_carousel">
+                                <div class="row">
+                                    <div class="col-lg-11">
+                                        <div class="single_testmonial d-flex align-items-center">
+                                            <div class="thumb">
+                                                <img src="img/testmonial/author.png" alt="">
+                                                <div class="quote_icon">
+                                                    <i class="Flaticon flaticon-quote"></i>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering through animal welfare when people might depend on livestock as their only source of income or food.</p>
+                                                <span>- Micky Mouse</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_carousel">
+                                <div class="row">
+                                    <div class="col-lg-11">
+                                        <div class="single_testmonial d-flex align-items-center">
+                                            <div class="thumb">
+                                                <img src="img/testmonial/author.png" alt="">
+                                                <div class="quote_icon">
+                                                    <i class=" Flaticon flaticon-quote"></i>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering through animal welfare when people might depend on livestock as their only source of income or food.</p>
+                                                <span>- Micky Mouse</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_carousel">
+                                <div class="row">
+                                    <div class="col-lg-11">
+                                        <div class="single_testmonial d-flex align-items-center">
+                                            <div class="thumb">
+                                                <img src="img/testmonial/author.png" alt="">
+                                                <div class="quote_icon">
+                                                    <i class="Flaticon flaticon-quote"></i>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering through animal welfare when people might depend on livestock as their only source of income or food.</p>
+                                                <span>- Micky Mouse</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         /testimonial_area  -->
+
+
+        <!-- footer start -->
+<!--        <footer class="footer">
+            <div class="footer_top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-9 col-md-10">
-                            <div class="hero__caption">
-                                <h1>Find the most exciting startup jobs</h1>
+                        <div class="col-xl-3 col-md-6 col-lg-3">
+                            <div class="footer_widget wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                                <div class="footer_logo">
+                                    <a href="#">
+                                        <img src="img/logo.png" alt="">
+                                    </a>
+                                </div>
+                                <p>
+                                    finloan@support.com <br>
+                                    +10 873 672 6782 <br>
+                                    600/D, Green road, NewYork
+                                </p>
+                                <div class="socail_links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-6 col-lg-2">
+                            <div class="footer_widget wow fadeInUp" data-wow-duration="1.1s" data-wow-delay=".4s">
+                                <h3 class="footer_title">
+                                    Company
+                                </h3>
+                                <ul>
+                                    <li><a href="#">About </a></li>
+                                    <li><a href="#"> Pricing</a></li>
+                                    <li><a href="#">Carrier Tips</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-lg-3">
+                            <div class="footer_widget wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".5s">
+                                <h3 class="footer_title">
+                                    Category
+                                </h3>
+                                <ul>
+                                    <li><a href="#">Design & Art</a></li>
+                                    <li><a href="#">Engineering</a></li>
+                                    <li><a href="#">Sales & Marketing</a></li>
+                                    <li><a href="#">Finance</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-lg-4">
+                            <div class="footer_widget wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".6s">
+                                <h3 class="footer_title">
+                                    Subscribe
+                                </h3>
+                                <form action="#" class="newsletter_form">
+                                    <input type="text" placeholder="Enter your mail">
+                                    <button type="submit">Subscribe</button>
+                                </form>
+                                <p class="newsletter_text">Esteem spirit temper too say adieus who direct esteem esteems
+                                    luckily.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Search Box -->
+                </div>
+            </div>
+            <div class="copy-right_text wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".3s">
+                <div class="container">
+                    <div class="footer_border"></div>
                     <div class="row">
-                        <div class="col-xl-8">
-                            <!-- form -->
-                            <form action="#" class="search-box">
-                                <div class="input-form">
-                                    <input type="text" placeholder="Job Tittle or keyword">
-                                </div>
-                                <div class="select-form">
-                                    <div class="select-itms">
-                                        <select name="select" id="select1">
-                                            <option value="">Location BD</option>
-                                            <option value="">Location PK</option>
-                                            <option value="">Location US</option>
-                                            <option value="">Location UK</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="search-form">
-                                    <a href="#">Find job</a>
-                                </div>	
-                            </form>	
+                        <div class="col-xl-12">
+                            <p class="copy_right text-center">
+                                 Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. 
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                 Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. 
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- slider Area End-->
-    <!-- Our Services Start -->
-    <div class="our-services section-pad-t30">
-        <div class="container">
-            <!-- Section Tittle -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-tittle text-center">
-                        <span>FEATURED TOURS Packages</span>
-                        <h2>Browse Top Categories </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex justify-contnet-center">
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-services text-center mb-30">
-                        <div class="services-ion">
-                            <span class="flaticon-tour"></span>
-                        </div>
-                        <div class="services-cap">
-                            <h5><a href="job_listing.html">Design & Creative</a></h5>
-                            <span>(653)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-services text-center mb-30">
-                        <div class="services-ion">
-                            <span class="flaticon-cms"></span>
-                        </div>
-                        <div class="services-cap">
-                            <h5><a href="job_listing.html">Design & Development</a></h5>
-                            <span>(658)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-services text-center mb-30">
-                        <div class="services-ion">
-                            <span class="flaticon-report"></span>
-                        </div>
-                        <div class="services-cap">
-                            <h5><a href="job_listing.html">Sales & Marketing</a></h5>
-                            <span>(658)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-services text-center mb-30">
-                        <div class="services-ion">
-                            <span class="flaticon-app"></span>
-                        </div>
-                        <div class="services-cap">
-                            <h5><a href="job_listing.html">Mobile Application</a></h5>
-                            <span>(658)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-services text-center mb-30">
-                        <div class="services-ion">
-                            <span class="flaticon-helmet"></span>
-                        </div>
-                        <div class="services-cap">
-                            <h5><a href="job_listing.html">Construction</a></h5>
-                            <span>(658)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-services text-center mb-30">
-                        <div class="services-ion">
-                            <span class="flaticon-high-tech"></span>
-                        </div>
-                        <div class="services-cap">
-                            <h5><a href="job_listing.html">Information Technology</a></h5>
-                            <span>(658)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-services text-center mb-30">
-                        <div class="services-ion">
-                            <span class="flaticon-real-estate"></span>
-                        </div>
-                        <div class="services-cap">
-                            <h5><a href="job_listing.html">Real Estate</a></h5>
-                            <span>(658)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-services text-center mb-30">
-                        <div class="services-ion">
-                            <span class="flaticon-content"></span>
-                        </div>
-                        <div class="services-cap">
-                            <h5><a href="job_listing.html">Content Writer</a></h5>
-                            <span>(658)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- More Btn -->
-            <!-- Section Button -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="browse-btn2 text-center mt-50">
-                        <a href="job_listing.html" class="border-btn2">Browse All Sectors</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Services End -->
-    <!-- Online CV Area Start -->
-    <div class="online-cv cv-bg section-overly pt-90 pb-120"  data-background="<c:url value="/resources/img/about-1.jpg"/>">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-10">
-                    <div class="cv-caption text-center">
-                        <p class="pera1">FEATURED TOURS Packages</p>
-                        <p class="pera2"> Make a Difference with Your Online Resume!</p>
-                        <a href="#" class="border-btn2 border-btn4">Upload your cv</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Online CV Area End-->
-    <!-- Featured_job_start -->
-    <section class="featured-job-area feature-padding">
-        <div class="container">
-            <!-- Section Tittle -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-tittle text-center">
-                        <span>Recent Job</span>
-                        <h2>Featured Jobs</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-10">
-                    <!-- single-job-content -->
-                    <div class="single-job-items mb-30">
-                        <div class="job-items">
-                            <div class="company-img">
-                                <a href="job_details.html"><img src="<c:url value="/resources/img/about-1.jpg"/>" alt=""></a>
-                            </div>
-                            <div class="job-tittle">
-                                <a href="job_details.html"><h4>Digital Marketer</h4></a>
-                                <ul>
-                                    <li>Creative Agency</li>
-                                    <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
-                                    <li>$3500 - $4000</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="items-link f-right">
-                            <a href="job_details.html">Full Time</a>
-                            <span>7 hours ago</span>
-                        </div>
-                    </div>
-                    <!-- single-job-content -->
-                    <div class="single-job-items mb-30">
-                        <div class="job-items">
-                            <div class="company-img">
-                                <a href="job_details.html"><img src="<c:url value="/resources/img/about-1.jpg"/>" alt=""></a>
-                            </div>
-                            <div class="job-tittle">
-                                <a href="job_details.html"><h4>Digital Marketer</h4></a>
-                                <ul>
-                                    <li>Creative Agency</li>
-                                    <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
-                                    <li>$3500 - $4000</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="items-link f-right">
-                            <a href="job_details.html">Full Time</a>
-                            <span>7 hours ago</span>
-                        </div>
-                    </div>
-                    <!-- single-job-content -->
-                    <div class="single-job-items mb-30">
-                        <div class="job-items">
-                            <div class="company-img">
-                                <a href="job_details.html"><img src="<c:url value="/resources/img/about-1.jpg"/>" alt=""></a>
-                            </div>
-                            <div class="job-tittle">
-                                <a href="job_details.html"><h4>Digital Marketer</h4></a>
-                                <ul>
-                                    <li>Creative Agency</li>
-                                    <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
-                                    <li>$3500 - $4000</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="items-link f-right">
-                            <a href="job_details.html">Full Time</a>
-                            <span>7 hours ago</span>
-                        </div>
-                    </div>
-                    <!-- single-job-content -->
-                    <div class="single-job-items mb-30">
-                        <div class="job-items">
-                            <div class="company-img">
-                                <a href="job_details.html"><img src="<c:url value="/resources/img/about-1.jpg"/>" alt=""></a>
-                            </div>
-                            <div class="job-tittle">
-                                <a href="job_details.html"><h4>Digital Marketer</h4></a>
-                                <ul>
-                                    <li>Creative Agency</li>
-                                    <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
-                                    <li>$3500 - $4000</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="items-link f-right">
-                            <a href="job_details.html">Full Time</a>
-                            <span>7 hours ago</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Featured_job_end -->
-    <!-- How  Apply Process Start-->
-    <div class="apply-process-area apply-bg pt-150 pb-150" data-background="<c:url value="/resources/img/about-1.jpg"/>">
-        <div class="container">
-            <!-- Section Tittle -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-tittle white-text text-center">
-                        <span>Apply process</span>
-                        <h2> How it works</h2>
-                    </div>
-                </div>
-            </div>
-            <!-- Apply Process Caption -->
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-process text-center mb-30">
-                        <div class="process-ion">
-                            <span class="flaticon-search"></span>
-                        </div>
-                        <div class="process-cap">
-                            <h5>1. Search a job</h5>
-                            <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-process text-center mb-30">
-                        <div class="process-ion">
-                            <span class="flaticon-curriculum-vitae"></span>
-                        </div>
-                        <div class="process-cap">
-                            <h5>2. Apply for job</h5>
-                            <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-process text-center mb-30">
-                        <div class="process-ion">
-                            <span class="flaticon-tour"></span>
-                        </div>
-                        <div class="process-cap">
-                            <h5>3. Get your job</h5>
-                            <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- How  Apply Process End-->
-    <!-- Testimonial Start -->
-    <div class="testimonial-area testimonial-padding">
-        <div class="container">
-            <!-- Testimonial contents -->
-            <div class="row d-flex justify-content-center">
-                <div class="col-xl-8 col-lg-8 col-md-10">
-                    <div class="h1-testimonial-active dot-style">
-                        <!-- Single Testimonial -->
-                        <div class="single-testimonial text-center">
-                            <!-- Testimonial Content -->
-                            <div class="testimonial-caption ">
-                                <!-- founder -->
-                                <div class="testimonial-founder  ">
-                                    <div class="founder-img mb-30">
-                                        <img src="<c:url value="/resources/img/about-1.jpg"/>" alt="">
-                                        <span>Margaret Lawson</span>
-                                        <p>Creative Director</p>
-                                    </div>
-                                </div>
-                                <div class="testimonial-top-cap">
-                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Testimonial -->
-                        <div class="single-testimonial text-center">
-                            <!-- Testimonial Content -->
-                            <div class="testimonial-caption ">
-                                <!-- founder -->
-                                <div class="testimonial-founder  ">
-                                    <div class="founder-img mb-30">
-                                        <img src="<c:url value="/resources/img/about-1.jpg"/>" alt="">
-                                        <span>Margaret Lawson</span>
-                                        <p>Creative Director</p>
-                                    </div>
-                                </div>
-                                <div class="testimonial-top-cap">
-                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Testimonial -->
-                        <div class="single-testimonial text-center">
-                            <!-- Testimonial Content -->
-                            <div class="testimonial-caption ">
-                                <!-- founder -->
-                                <div class="testimonial-founder  ">
-                                    <div class="founder-img mb-30">
-                                        <img src="<c:url value="/resources/img/about-1.jpg"/>" alt="">
-                                        <span>Margaret Lawson</span>
-                                        <p>Creative Director</p>
-                                    </div>
-                                </div>
-                                <div class="testimonial-top-cap">
-                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-    <!-- Support Company Start-->
-    <div class="support-company-area support-padding fix">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="right-caption">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle section-tittle2">
-                            <span>What we are doing</span>
-                            <h2>24k Talented people are getting Jobs</h2>
-                        </div>
-                        <div class="support-caption">
-                            <p class="pera-top">Mollit anim laborum duis au dolor in voluptate velit ess cillum dolore eu lore dsu quality mollit anim laborumuis au dolor in voluptate velit cillum.</p>
-                            <p>Mollit anim laborum.Duis aute irufg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur signjnt occa cupidatat non inulpadeserunt mollit aboru. temnthp incididbnt ut labore mollit anim laborum suis aute.</p>
-                            <a href="about.html" class="btn post-btn">Post a job</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="support-location-img">
-                        <img src="<c:url value="/resources/img/about-1.jpg"/>" alt="">
-                        <div class="support-img-cap text-center">
-                            <p>Since</p>
-                            <span>1994</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Support Company End-->
-    <!-- Blog Area Start -->
-    <div class="home-blog-area blog-h-padding">
-        <div class="container">
-            <!-- Section Tittle -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-tittle text-center">
-                        <span>Our latest blog</span>
-                        <h2>Our recent news</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="home-blog-single mb-30">
-                        <div class="blog-img-cap">
-                            <div class="blog-img">
-                                <img src="<c:url value="/resources/img/about-1.jpg"/>" alt="">
-                                <!-- Blog date -->
-                                <div class="blog-date text-center">
-                                    <span>24</span>
-                                    <p>Now</p>
-                                </div>
-                            </div>
-                            <div class="blog-cap">
-                                <p>|   Properties</p>
-                                <h3><a href="single-blog.html">Footprints in Time is perfect House in Kurashiki</a></h3>
-                                <a href="#" class="more-btn">Read more »</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="home-blog-single mb-30">
-                        <div class="blog-img-cap">
-                            <div class="blog-img">
-                                <img src="<c:url value="/resources/img/about-1.jpg"/>" alt="">
-                                <!-- Blog date -->
-                                <div class="blog-date text-center">
-                                    <span>24</span>
-                                    <p>Now</p>
-                                </div>
-                            </div>
-                            <div class="blog-cap">
-                                <p>|   Properties</p>
-                                <h3><a href="single-blog.html">Footprints in Time is perfect House in Kurashiki</a></h3>
-                                <a href="#" class="more-btn">Read more »</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog Area End -->
+        </footer>-->
+        <!--/ footer end  -->
 
-</main>
-<footer>
-    <!-- Footer Start-->
-    <div class="footer-area footer-bg footer-padding">
-        <div class="container">
-            <div class="row d-flex justify-content-between">
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-footer-caption mb-50">
-                        <div class="single-footer-caption mb-30">
-                            <div class="footer-tittle">
-                                <h4>About Us</h4>
-                                <div class="footer-pera">
-                                    <p>Heaven frucvitful doesn't cover lesser dvsays appear creeping seasons so behold.</p>
-                                </div>
-                            </div>
-                        </div>
+        <!-- link that opens popup -->
+        <!-- JS here -->
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/ajax-form.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/scrollIt.js"></script>
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/nice-select.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/gijgo.min.js"></script>
 
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                    <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle">
-                            <h4>Contact Info</h4>
-                            <ul>
-                                <li>
-                                    <p>Address :Your address goes
-                                        here, your demo address.</p>
-                                </li>
-                                <li><a href="#">Phone : +8880 44338899</a></li>
-                                <li><a href="#">Email : info@colorlib.com</a></li>
-                            </ul>
-                        </div>
 
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                    <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle">
-                            <h4>Important Link</h4>
-                            <ul>
-                                <li><a href="#"> View Project</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Testimonial</a></li>
-                                <li><a href="#">Proparties</a></li>
-                                <li><a href="#">Support</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                    <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle">
-                            <h4>Newsletter</h4>
-                            <div class="footer-pera footer-pera2">
-                                <p>Heaven fruitful doesn't over lesser in days. Appear creeping.</p>
-                            </div>
-                            <!-- Form -->
-                            <div class="footer-form" >
-                                <div id="mc_embed_signup">
-                                    <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                          method="get" class="subscribe_form relative mail_part">
-                                        <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
-                                               class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
-                                               onblur="this.placeholder = ' Email Address '">
-                                        <div class="form-icon">
-                                            <button type="submit" name="submit" id="newsletter-submit"
-                                                    class="email_icon newsletter-submit button-contactForm"><img src="<c:url value="/img/icon/form.png"/>" alt=""></button>
-                                        </div>
-                                        <div class="mt-10 info"></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--  -->
-            <div class="row footer-wejed justify-content-between">
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                    <!-- logo -->
-                    <div class="footer-logo mb-20">
-                        <a href="index.html"><img src="<c:url value="/img/logo/logo2_footer.png"/>" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                    <div class="footer-tittle-bottom">
-                        <span>5000+</span>
-                        <p>Talented Hunter</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                    <div class="footer-tittle-bottom">
-                        <span>451</span>
-                        <p>Talented Hunter</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                    <!-- Footer Bottom Tittle -->
-                    <div class="footer-tittle-bottom">
-                        <span>568</span>
-                        <p>Talented Hunter</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- footer-bottom area -->
-    <div class="footer-bottom-area footer-bg">
-        <div class="container">
-            <div class="footer-border">
-                <div class="row d-flex justify-content-between align-items-center">
-                    <div class="col-xl-10 col-lg-10 ">
-                        <div class="footer-copy-right">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-2">
-                        <div class="footer-social f-right">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fas fa-globe"></i></a>
-                            <a href="#"><i class="fab fa-behance"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End-->
-</footer>
+
+        <!--contact js-->
+        <script src="js/contact.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/mail-script.js"></script>
+
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

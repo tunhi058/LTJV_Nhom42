@@ -4,174 +4,138 @@
     Author     : tusnhi
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<footer>
-    <!-- Footer Start-->
-    <div class="footer-area footer-bg footer-padding">
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<footer class="footer">
+    <div class="footer_top">
         <div class="container">
-            <div class="row d-flex justify-content-between">
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-footer-caption mb-50">
-                        <div class="single-footer-caption mb-30">
-                            <div class="footer-tittle">
-                                <h4>About Us</h4>
-                                <div class="footer-pera">
-                                    <p>Heaven frucvitful doesn't cover lesser dvsays appear creeping seasons so behold.</p>
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="footer_widget wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                        <div class="footer_logo">
+                            <a href="#">
+                                <img src="img/logo.png" alt="">
+                            </a>
                         </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                    <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle">
-                            <h4>Contact Info</h4>
+<!--                        <p>
+                            finloan@support.com <br>
+                            +10 873 672 6782 <br>
+                            600/D, Green road, NewYork
+                        </p>-->
+<!--                        <div class="socail_links">
                             <ul>
                                 <li>
-                                    <p>Address :Your address goes
-                                        here, your demo address.</p>
+                                    <a href="#">
+                                        <i class="ti-facebook"></i>
+                                    </a>
                                 </li>
-                                <li><a href="#">Phone : +8880 44338899</a></li>
-                                <li><a href="#">Email : info@colorlib.com</a></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
 
                     </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                    <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle">
-                            <h4>Important Link</h4>
-                            <ul>
-                                <li><a href="#"> View Project</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Testimonial</a></li>
-                                <li><a href="#">Proparties</a></li>
-                                <li><a href="#">Support</a></li>
-                            </ul>
-                        </div>
+                </div>-->
+<!--                <div class="col-xl-2 col-md-6 col-lg-2">
+                    <div class="footer_widget wow fadeInUp" data-wow-duration="1.1s" data-wow-delay=".4s">
+                        <h3 class="footer_title">
+                            Company
+                        </h3>
+                        <ul>
+                            <li><a href="#">About </a></li>
+                            <li><a href="#"> Pricing</a></li>
+                            <li><a href="#">Carrier Tips</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                    <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle">
-                            <h4>Newsletter</h4>
-                            <div class="footer-pera footer-pera2">
-                                <p>Heaven fruitful doesn't over lesser in days. Appear creeping.</p>
-                            </div>
-                            <!-- Form -->
-                            <div class="footer-form" >
-                                <div id="mc_embed_signup">
-                                    <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                          method="get" class="subscribe_form relative mail_part">
-                                        <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
-                                               class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
-                                               onblur="this.placeholder = ' Email Address '">
-                                        <div class="form-icon">
-                                            <button type="submit" name="submit" id="newsletter-submit"
-                                                    class="email_icon newsletter-submit button-contactForm"><img src="<c:url value="/img/icon/form.png"/>" alt=""></button>
-                                        </div>
-                                        <div class="mt-10 info"></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="footer_widget wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".5s">
+                        <h3 class="footer_title">
+                            Category
+                        </h3>
+                        <ul>
+                            <li><a href="#">Design & Art</a></li>
+                            <li><a href="#">Engineering</a></li>
+                            <li><a href="#">Sales & Marketing</a></li>
+                            <li><a href="#">Finance</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <!--  -->
-            <div class="row footer-wejed justify-content-between">
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                    <!-- logo -->
-                    <div class="footer-logo mb-20">
-                        <a href="index.html"><img src="<c:url value="/img/logo/logo2_footer.png"/>" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                    <div class="footer-tittle-bottom">
-                        <span>5000+</span>
-                        <p>Talented Hunter</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                    <div class="footer-tittle-bottom">
-                        <span>451</span>
-                        <p>Talented Hunter</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                    <!-- Footer Bottom Tittle -->
-                    <div class="footer-tittle-bottom">
-                        <span>568</span>
-                        <p>Talented Hunter</p>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="footer_widget wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".6s">
+                        <h3 class="footer_title">
+                            Subscribe
+                        </h3>
+                        <form action="#" class="newsletter_form">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <p class="newsletter_text">Esteem spirit temper too say adieus who direct esteem esteems
+                            luckily.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- footer-bottom area -->
-    <div class="footer-bottom-area footer-bg">
+    </div>-->
+    <div class="copy-right_text wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".3s">
         <div class="container">
-            <div class="footer-border">
-                <div class="row d-flex justify-content-between align-items-center">
-                    <div class="col-xl-10 col-lg-10 ">
-                        <div class="footer-copy-right">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-2">
-                        <div class="footer-social f-right">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fas fa-globe"></i></a>
-                            <a href="#"><i class="fab fa-behance"></i></a>
-                        </div>
-                    </div>
+            <div class="footer_border"></div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <p class="copy_right text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with 
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End-->
 </footer>
-
 <!-- JS here -->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/ajax-form.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/scrollIt.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/nice-select.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/gijgo.min.js"></script>
 
-<!-- All JS Custom Plugins Link Here here -->
-<script src="<c:url value="/js/vendor/modernizr-3.5.0.min.js"/>"></script>
-<!-- Jquery, Popper, Bootstrap -->
-<script src="<c:url value="/js/vendor/jquery-1.12.4.min.js"/>"></script>
-<script src="<c:url value="/js/popper.min.js"/>"></script>
-<script src="<c:url value="/js/bootstrap.min.js"/>"></script>
-        <!-- Jquery Mobile Menu -->
-<script src="<c:url value="/js/jquery.slicknav.min.js"/>"></script>
 
-<!-- Jquery Slick , Owl-Carousel Plugins -->
-<script src="<c:url value="/js/owl.carousel.min.js"/>"></script>
-<script src="<c:url value="/js/slick.min.js"/>"></script>
-<script src="<c:url value="/js/price_rangs.js"/>"></script>
 
-<!-- One Page, Animated-HeadLin -->
-<script src="<c:url value="/js/wow.min.js"/>"></script>
-<script src="<c:url value="/js/animated.headline.js"/>"></script>
-<script src="<c:url value="/js/jquery.magnific-popup.js"/>"></script>
+<!--contact js-->
+<script src="js/contact.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/mail-script.js"></script>
 
-<!-- Scrollup, nice-select, sticky -->
-<script src="<c:url value="/js/jquery.scrollUp.min.js"/>"></script>
-<script src="<c:url value="/js/jquery.nice-select.min.js"/>"></script>
-<script src="<c:url value="/js/jquery.sticky.js"/>"></script>
 
-<!-- contact js -->
-<script src="<c:url value="/js/contact.js"/>"></script>
-<script src="<c:url value="/js/jquery.form.js"/>"></script>
-<script src="<c:url value="/js/jquery.validate.min.js"/>"></script>
-<script src="<c:url value="/js/mail-script.js"/>"></script>
-<script src="<c:url value="/js/jquery.ajaxchimp.min.js"/>"></script>
-
-<!-- Jquery Plugins, main Jquery -->	
-<script src="<c:url value="/js/plugins.js"/>"></script>
-<script src="<c:url value="/js/main.js"/>"></script>
+<script src="js/main.js"></script>
 
