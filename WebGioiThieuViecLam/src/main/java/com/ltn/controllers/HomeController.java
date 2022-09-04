@@ -36,8 +36,8 @@ public class HomeController {
     private Environment env;
 
     @RequestMapping("/")
-    public String index(Model model, @RequestParam Map<String, String> param) {
-        String kw = param.getOrDefault("kw", "");
+    public String index(Model model, @RequestParam Map<String, String> params) {
+        String kw = params.getOrDefault("kw", "");
         model.addAttribute("recruitmentNewses", this.recruitmentNewsService.getRecruitmentNewses(kw));
         model.addAttribute("employerInfos", this.employerInfoService.getEmployerInfos());
 
