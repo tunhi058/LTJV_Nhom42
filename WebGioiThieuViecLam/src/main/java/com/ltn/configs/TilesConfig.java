@@ -30,6 +30,7 @@ public class TilesConfig {
     public TilesConfigurer tilesConfigurer() {
         TilesConfigurer c = new TilesConfigurer();
         c.setDefinitions("/WEB-INF/tiles.xml");
+        c.setCheckRefresh(true);
         
         return c;
     }

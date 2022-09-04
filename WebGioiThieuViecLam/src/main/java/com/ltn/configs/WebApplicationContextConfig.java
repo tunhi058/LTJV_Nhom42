@@ -25,15 +25,18 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableTransactionManagement
 @ComponentScan(basePackages = {
     "com.ltn.controllers",
-    "com.ltn.pojos"
+    "com.ltn.repository",
+    "com.ltn.service"
 })
 public class WebApplicationContextConfig implements WebMvcConfigurer {
+
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer config) {
         config.enable();
     }
-    
-     @Override
+
+    @Override
+    //chỉ định vị trí chứa các tài nguyên
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/css/**")
                 .addResourceLocations("/resources/css/");
@@ -43,5 +46,8 @@ public class WebApplicationContextConfig implements WebMvcConfigurer {
 
         registry.addResourceHandler("/js/**")
                 .addResourceLocations("/resources/js/");
+
+        registry.addResourceHandler("/fonts/**")
+                .addResourceLocations("/resources/fonts/");
     }
 }

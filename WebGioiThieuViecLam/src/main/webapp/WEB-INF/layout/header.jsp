@@ -14,7 +14,7 @@
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-2">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="<c:url value="/"/>">
                                     <img src="img/logo.png" alt="">
                                 </a>
                             </div>
@@ -23,22 +23,14 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.html">home</a></li>
-                                        <li><a href="jobs.html">Browse Job</a></li>
-                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="candidate.html">Candidates </a></li>
-                                                <li><a href="job_details.html">job details </a></li>
-                                                <li><a href="elements.html">elements</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-blog.html">single-blog</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="<c:url value="/" />">Home</a></li>
+                                        <!--                                        <li><a href="jobs.html">Browse Job</a></li>
+                                                                                <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                                                                    <ul class="submenu">
+                                                                                        <li><a href="candidate.html">Candidates </a></li>
+                                                                                        <li><a href="job_details.html">Job details </a></li>
+                                                                                    </ul>
+                                                                                </li>-->
                                     </ul>
                                 </nav>
                             </div>
@@ -46,10 +38,14 @@
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="Appointment">
                                 <div class="phone_num d-none d-xl-block">
-                                    <a href="#">Log in</a>
+                                    <li class="nav-item active"><a class="nav-link " href="<c:url value="/login"/>">Login</a></li>
                                 </div>
                                 <div class="d-none d-lg-block">
-                                    <a class="boxed-btn3" href="#">Post a Job</a>
+                                    <li class="nav-item active"><a class="boxed-btn3" "nav-link " href="<c:url value="/register"/>">Register</a></li>
+
+                                </div>
+                                <div class="d-none d-lg-block">
+                                    <li class="nav-item active"><a class= "nav-link " href="<c:url value="/logout"/>">Log out</a></li>
                                 </div>
                             </div>
                         </div>
