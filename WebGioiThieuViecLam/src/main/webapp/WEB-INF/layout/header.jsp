@@ -36,19 +36,29 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                            <div class="Appointment">
+                        <div class="Appointment">
+                            <c:forEach var="cat" items="${categories}">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> ${cat.name}</a>
+                                </li>                                    
+                            </c:forEach>                            
+                            <c:if test="${pageContext.request.userPrincipal.name !=null}">
+                                <li class="nav-item active"><a class="nav-link " href="<c:url value="/"/>">${pageContext.request.userPrincipal.name}</a></li>
+                            </c:if>
+                            <c:if test="${pageContext.request.userPrincipal.name ==null}">
                                 <div class="phone_num d-none d-xl-block">
                                     <li class="nav-item active"><a class="nav-link " href="<c:url value="/login"/>">Login</a></li>
                                 </div>
-                                <div class="d-none d-lg-block">
-                                    <li class="nav-item active"><a class="boxed-btn3" "nav-link " href="<c:url value="/register"/>">Register</a></li>
+                            </c:if>
+                            <div class="d-none d-lg-block">
+                                <li class="nav-item active"><a class="boxed-btn3" "nav-link " href="<c:url value="/register"/>">Register</a></li>
+                            </div>
 
-                                </div>
-                                <div class="d-none d-lg-block">
-                                    <li class="nav-item active"><a class= "nav-link " href="<c:url value="/logout"/>">Log out</a></li>
-                                </div>
+                            <div class="d-none d-lg-block">
+                                <li class="nav-item active"><a class= "nav-link " href="<c:url value="/logout"/>">Log out</a></li>
                             </div>
                         </div>
+                    </div>
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
                         </div>

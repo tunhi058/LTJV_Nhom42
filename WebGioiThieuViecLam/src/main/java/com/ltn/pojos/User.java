@@ -50,6 +50,7 @@ import javax.xml.bind.annotation.XmlTransient;
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
+    public static String USER;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
@@ -72,9 +73,8 @@ public class User implements Serializable {
     @Column(name = "email")
     private String email;
     // @Pattern(regexp="^\\(?(\\d{3})\\)?[- ]?(\\d{3})[- ]?(\\d{4})$", message="Invalid phone/fax format, should be as xxx-xxx-xxxx")//if the field contains phone or fax number consider using this annotation to enforce field validation
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 255)
+    
+    
     @Column(name = "phone")
     private String phone;
     @Basic(optional = false)
@@ -92,9 +92,9 @@ public class User implements Serializable {
     private String avatar;
     @Column(name = "active")
     private Boolean active;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 255)
+    
+    
+   
     @Column(name = "user_role")
     private String userRole;
     @OneToOne(cascade = CascadeType.ALL, mappedBy = "user")
@@ -110,23 +110,7 @@ public class User implements Serializable {
     @Transient
     private String confirmPassword;
 
-    public User() {
-    }
-
-    public User(Integer id) {
-        this.id = id;
-    }
-
-    public User(Integer id, String firstName, String lastName, String email, String phone, String username, String password, String userRole) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.phone = phone;
-        this.username = username;
-        this.password = password;
-        this.userRole = userRole;
-    }
+   
 
     public Integer getId() {
         return id;
@@ -256,6 +240,20 @@ public class User implements Serializable {
     @Override
     public String toString() {
         return "com.ltn.pojos.User[ id=" + id + " ]";
+    }
+
+    /**
+     * @return the confirmPassword
+     */
+    public String getConfirmPassword() {
+        return confirmPassword;
+    }
+
+    /**
+     * @param confirmPassword the confirmPassword to set
+     */
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
     }
 
 }
